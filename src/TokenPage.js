@@ -15,7 +15,6 @@ const style = {
 
 function TokenPage() {
 
-
   const [accountAddress, setAccountAddress] = useState('')
   const [accountBalance, setAccountBalance] = useState('')
   const [errorMessage, setErrorMessage] = useState(null)
@@ -48,8 +47,6 @@ function TokenPage() {
     checkUser();
     // eslint-disable-next-line
   }, []);
-
-
 
   async function getAccountBalance(address) {
     const balance = await web3.eth.getBalance(address)

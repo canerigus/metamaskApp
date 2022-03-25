@@ -41,7 +41,6 @@ export default function Wallet() {
     return balance
   }
 
-
   return (
     <>
       <Card sx={{ width: 500, boxShadow: 10 }}>
