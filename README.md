@@ -9,7 +9,7 @@ First the app asks for account address to connect. After connecting, it checks t
 
 ## Live Demo 
 
-[Project Live Demo](https://metamask-login-app.vercel.app/).
+[Project Live Demo](https://metamask-sign-app.vercel.app/).
 
 ## Setup
 Must install dependencies to run this application. To set up dependencies:
