@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Typography, Button } from '@mui/material';
-import { Card, CardContent, CardActions, CardMedia, Alert, AlertTitle } from '@mui/material';
+import { CardContent, CardActions, Alert, AlertTitle } from '@mui/material';
 import Web3 from 'web3'
 import { useNavigate } from "react-router-dom";
 
@@ -43,23 +43,14 @@ export default function Wallet() {
 
   return (
     <>
-      <Card sx={{ width: 500, boxShadow: 10 }}>
-        <CardMedia
-          style={{ margin: 'auto' }}
-          component="img"
-          height="350"
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/2048px-MetaMask_Fox.svg.png"
-          alt="metamask jpeg"
-        />
-        <CardContent style={{ paddingBottom: '0' }}>
-          <Typography gutterBottom variant="h5" component="div" style={{ textAlign: 'center' }}>
-            Metamask Login App
-          </Typography>
-        </CardContent>
-        <CardActions style={{ justifyContent: 'center' }}>
-          <Button sx={{ backgroundColor: '#2E7B8C' }} variant="contained" color="success" onClick={connectWallet}>Connect Wallet</Button>
-        </CardActions>
-      </Card >
+      <CardContent style={{ paddingBottom: '0' }}>
+        <Typography gutterBottom variant="h5" component="div" style={{ textAlign: 'center' }}>
+          Metamask Sign & Verify App
+        </Typography>
+      </CardContent>
+      <CardActions style={{ justifyContent: 'center' }}>
+        <Button sx={{ backgroundColor: '#2E7B8C' }} variant="contained" color="success" onClick={connectWallet}>Connect Wallet</Button>
+      </CardActions>
       {
         errorMessage &&
         <Alert severity="error">
